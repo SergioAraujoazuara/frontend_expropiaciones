@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Asegurar que el texto no tenga capitalización automática por defecto */
+body, p, span, div, h1, h2, h3, h4, h5, h6, label, input, textarea, select, button:not(.uppercase) {
+  text-transform: none !important;
+}
+
+/* Permitir uppercase solo cuando se especifique explícitamente (para botones, etc.) */
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+/* Permitir capitalize solo cuando se especifique explícitamente */
+.capitalize {
+  text-transform: capitalize !important;
+}
+
+/* Permitir lowercase solo cuando se especifique explícitamente */
+.lowercase {
+  text-transform: lowercase !important;
+}
